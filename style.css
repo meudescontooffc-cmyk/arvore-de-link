@@ -1,0 +1,272 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', Arial, sans-serif;
+}
+
+/* FUNDO ANIMADO */
+
+body{
+
+background:#050505;
+color:white;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+padding:20px;
+
+overflow:hidden;
+
+}
+
+/* PARTÍCULAS */
+
+body::before{
+
+content:"";
+position:fixed;
+
+width:200%;
+height:200%;
+
+background:
+radial-gradient(circle, rgba(255,215,0,0.15) 1px, transparent 1px);
+
+background-size:80px 80px;
+
+animation:particles 60s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes particles{
+
+from{
+transform:translate(0,0);
+}
+
+to{
+transform:translate(-200px,-200px);
+}
+
+}
+
+/* CONTAINER */
+
+.container{
+
+width:100%;
+max-width:520px;
+
+padding:35px 25px;
+
+border-radius:20px;
+
+background:rgba(20,20,20,0.75);
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 0 40px rgba(255,215,0,0.05),
+0 15px 40px rgba(0,0,0,0.9);
+
+text-align:center;
+
+animation:fadeIn 1s ease;
+
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* TITULO */
+
+h1{
+
+font-size:32px;
+
+background:linear-gradient(90deg,#ffd700,#ffb300);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+margin-bottom:10px;
+
+}
+
+/* SUBTITULO */
+
+p{
+
+margin-bottom:30px;
+opacity:0.75;
+font-size:15px;
+
+}
+
+/* LINKS */
+
+.links{
+
+display:flex;
+flex-direction:column;
+gap:18px;
+
+}
+
+/* BOTÕES */
+
+.botao{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+padding:16px;
+
+border-radius:14px;
+
+text-decoration:none;
+color:white;
+
+background:linear-gradient(145deg,#1a1a1a,#101010);
+
+border:1px solid rgba(255,215,0,0.15);
+
+transition:all .25s ease;
+
+box-shadow:
+0 6px 15px rgba(0,0,0,0.5);
+
+}
+
+/* REMOVER MARCA AZUL */
+
+.botao:focus{
+outline:none;
+}
+
+/* HOVER */
+
+.botao:hover{
+
+transform:translateY(-4px);
+
+border:1px solid rgba(255,215,0,0.5);
+
+box-shadow:
+0 12px 25px rgba(0,0,0,0.9),
+0 0 20px rgba(255,215,0,0.25);
+
+}
+
+/* CLICK */
+
+.botao:active{
+
+transform:scale(0.96);
+
+}
+
+/* ICONE */
+
+.botao img{
+
+width:44px;
+height:44px;
+
+border-radius:10px;
+
+object-fit:cover;
+
+box-shadow:0 0 10px rgba(255,215,0,0.2);
+
+}
+
+/* TEXTO */
+
+.texto{
+text-align:left;
+}
+
+.texto h3{
+font-size:17px;
+margin-bottom:3px;
+}
+
+.texto span{
+font-size:13px;
+opacity:0.65;
+}
+
+/* FOOTER */
+
+.footer{
+
+margin-top:40px;
+font-size:13px;
+opacity:0.5;
+
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+h1{
+font-size:28px;
+}
+
+}
+
+@media (max-width:480px){
+
+h1{
+font-size:24px;
+}
+
+.botao{
+padding:14px;
+}
+
+.botao img{
+width:38px;
+height:38px;
+}
+
+}
+
+@media (max-width:320px){
+
+h1{
+font-size:20px;
+}
+
+.botao{
+padding:12px;
+}
+
+.botao img{
+width:34px;
+height:34px;
+}
+
+}
