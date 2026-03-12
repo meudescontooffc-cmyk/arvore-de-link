@@ -107,7 +107,7 @@ max-width:none; /* impede diminuir */
 display:block;
 
 /* move bastante para esquerda */
-margin:0 0 40px -120px;
+margin:0 0 40px -40px;
 
 animation:logoEntrada 1.2s ease;
 
