@@ -7,11 +7,11 @@ box-sizing:border-box;
 font-family:'Segoe UI', Arial, sans-serif;
 }
 
-/* FUNDO ANIMADO */
+/* FUNDO */
 
 body{
 
-background:#050505;
+background:#000000;
 color:white;
 
 display:flex;
@@ -21,7 +21,7 @@ align-items:center;
 min-height:100vh;
 padding:20px;
 
-overflow:hidden;
+overflow-x:hidden;
 
 }
 
@@ -36,7 +36,7 @@ width:200%;
 height:200%;
 
 background:
-radial-gradient(circle, rgba(255,215,0,0.15) 1px, transparent 1px);
+radial-gradient(circle, rgba(255,215,0,0.10) 1px, transparent 1px);
 
 background-size:80px 80px;
 
@@ -65,16 +65,16 @@ transform:translate(-200px,-200px);
 width:100%;
 max-width:520px;
 
-padding:35px 25px;
+padding:40px 30px;
 
-border-radius:20px;
+border-radius:22px;
 
-background:rgba(20,20,20,0.75);
-backdrop-filter:blur(10px);
+/* PRETO MAIS FORTE */
+background:#000000;
 
 box-shadow:
-0 0 40px rgba(255,215,0,0.05),
-0 15px 40px rgba(0,0,0,0.9);
+0 0 50px rgba(0,0,0,0.95),
+0 20px 60px rgba(0,0,0,1);
 
 text-align:center;
 
@@ -98,11 +98,70 @@ transform:translateY(0);
 
 }
 
+/* LOGO */
+
+.logo{
+
+width:500px;
+max-width:165%;
+
+display:block;
+margin:0 0 20px -40px;
+
+animation:logoEntrada 1.2s ease;
+
+/* BRILHO MAIS FORTE */
+filter:none;
+
+}
+
+/* brilho quando passa o mouse */
+
+.logo:hover{
+
+
+
+}
+
+/* animação da logo */
+
+@keyframes logoEntrada{
+
+from{
+opacity:0;
+transform:translateY(-40px) scale(0.9);
+}
+
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+/* brilho dourado */
+
+@keyframes brilho{
+
+0%{
+filter:drop-shadow(0 0 10px rgba(255,215,0,0.6));
+}
+
+50%{
+filter:drop-shadow(0 0 35px rgba(255,215,0,1));
+}
+
+100%{
+filter:drop-shadow(0 0 15px rgba(255,215,0,0.8));
+}
+
+}
+
 /* TITULO */
 
 h1{
 
-font-size:32px;
+font-size:30px;
 
 background:linear-gradient(90deg,#ffd700,#ffb300);
 -webkit-background-clip:text;
@@ -147,14 +206,15 @@ border-radius:14px;
 text-decoration:none;
 color:white;
 
-background:linear-gradient(145deg,#1a1a1a,#101010);
+/* BOTÕES PRETO FORTE */
+background:#050505;
 
 border:1px solid rgba(255,215,0,0.15);
 
 transition:all .25s ease;
 
 box-shadow:
-0 6px 15px rgba(0,0,0,0.5);
+0 8px 20px rgba(0,0,0,0.9);
 
 }
 
@@ -173,8 +233,8 @@ transform:translateY(-4px);
 border:1px solid rgba(255,215,0,0.5);
 
 box-shadow:
-0 12px 25px rgba(0,0,0,0.9),
-0 0 20px rgba(255,215,0,0.25);
+0 15px 35px rgba(0,0,0,1),
+0 0 25px rgba(255,215,0,0.25);
 
 }
 
@@ -190,21 +250,22 @@ transform:scale(0.96);
 
 .botao img{
 
-width:44px;
-height:44px;
+width:46px;
+height:46px;
 
 border-radius:10px;
 
 object-fit:cover;
 
-box-shadow:0 0 10px rgba(255,215,0,0.2);
+box-shadow:0 0 12px rgba(255,215,0,0.25);
 
 }
 
-/* TEXTO */
+/* TEXTO DOS BOTÕES */
 
 .texto{
 text-align:left;
+flex:1;
 }
 
 .texto h3{
@@ -221,7 +282,7 @@ opacity:0.65;
 
 .footer{
 
-margin-top:40px;
+margin-top:35px;
 font-size:13px;
 opacity:0.5;
 
@@ -232,7 +293,7 @@ opacity:0.5;
 @media (max-width:768px){
 
 h1{
-font-size:28px;
+font-size:26px;
 }
 
 }
@@ -240,7 +301,11 @@ font-size:28px;
 @media (max-width:480px){
 
 h1{
-font-size:24px;
+font-size:22px;
+}
+
+.logo{
+width:260px;
 }
 
 .botao{
@@ -260,6 +325,10 @@ h1{
 font-size:20px;
 }
 
+.logo{
+width:220px;
+}
+
 .botao{
 padding:12px;
 }
@@ -269,4 +338,4 @@ width:34px;
 height:34px;
 }
 
-}
+  }
