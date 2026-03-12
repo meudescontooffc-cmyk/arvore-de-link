@@ -102,11 +102,11 @@ transform:translateY(0);
 
 .logo{
 
-width:1200px;
-max-width:390%;
+width:700px;
+max-width:240%;
 
 display:block;
-margin:0 auto 25px -40px;
+margin:0 auto 38px -40px;
 
 animation:logoEntrada 1.2s ease;
 
