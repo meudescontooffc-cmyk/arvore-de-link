@@ -69,7 +69,6 @@ padding:40px 30px;
 
 border-radius:22px;
 
-/* PRETO MAIS FORTE */
 background:#000000;
 
 box-shadow:
@@ -102,24 +101,17 @@ transform:translateY(0);
 
 .logo{
 
-width:700px;
-max-width:240%;
+width:520px; /* logo grande */
+max-width:none; /* impede diminuir */
 
 display:block;
-margin:0 auto 38px -40px;
+
+/* move bastante para esquerda */
+margin:0 0 40px -120px;
 
 animation:logoEntrada 1.2s ease;
 
-/* BRILHO MAIS FORTE */
 filter:none;
-
-}
-
-/* brilho quando passa o mouse */
-
-.logo:hover{
-
-
 
 }
 
@@ -135,24 +127,6 @@ transform:translateY(-40px) scale(0.9);
 to{
 opacity:1;
 transform:translateY(0) scale(1);
-}
-
-}
-
-/* brilho dourado */
-
-@keyframes brilho{
-
-0%{
-filter:drop-shadow(0 0 10px rgba(255,215,0,0.6));
-}
-
-50%{
-filter:drop-shadow(0 0 35px rgba(255,215,0,1));
-}
-
-100%{
-filter:drop-shadow(0 0 15px rgba(255,215,0,0.8));
 }
 
 }
@@ -206,7 +180,6 @@ border-radius:14px;
 text-decoration:none;
 color:white;
 
-/* BOTÕES PRETO FORTE */
 background:#050505;
 
 border:1px solid rgba(255,215,0,0.15);
@@ -304,10 +277,6 @@ h1{
 font-size:22px;
 }
 
-.logo{
-width:260px;
-}
-
 .botao{
 padding:14px;
 }
@@ -323,10 +292,6 @@ height:38px;
 
 h1{
 font-size:20px;
-}
-
-.logo{
-width:220px;
 }
 
 .botao{
