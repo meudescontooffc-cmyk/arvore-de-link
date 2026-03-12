@@ -102,11 +102,11 @@ transform:translateY(0);
 
 .logo{
 
-width:500px;
-max-width:165%;
+width:640px;
+max-width:195%;
 
 display:block;
-margin:0 0 20px -40px;
+margin:0 auto 25px auto;
 
 animation:logoEntrada 1.2s ease;
 
@@ -338,4 +338,4 @@ width:34px;
 height:34px;
 }
 
-  }
+}
