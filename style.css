@@ -101,13 +101,13 @@ transform:translateY(0);
 
 .logo{
 
-width:400px; /* logo grande */
+width:510px; /* logo grande */
 max-width:none; /* impede diminuir */
 
 display:block;
 
 /* move bastante para esquerda */
-margin:80px 0 10px -100px;
+margin:80px 0  1px -85px;
 
 animation:logoEntrada 1.2s ease;
 
